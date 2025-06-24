@@ -1,0 +1,133 @@
+/* style.css */
+/* Future AI シンプル＆見やすいUI */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #3af;
+  margin-bottom: 20px;
+}
+
+.mode-select {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mode-select label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+#mode {
+  font-size: 1em;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #222;
+  color: #eee;
+  cursor: pointer;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#userInput {
+  width: 100%;
+  height: 100px;
+  font-size: 1.1em;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+#fileInput {
+  display: none;
+  font-size: 1em;
+  color: #eee;
+}
+
+#sendBtn {
+  width: 120px;
+  align-self: flex-end;
+  background: #3af;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sendBtn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+#sendBtn:hover:not(:disabled) {
+  background: #5cf;
+}
+
+#output {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+  font-size: 1.1em;
+  line-height: 1.4;
+  border: 1px solid #333;
+}
+
+.output-item {
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.output-item.text {
+  color: #ccc;
+}
+
+.output-item.error {
+  color: #f66;
+  font-weight: bold;
+}
+
+.output-item.image img,
+.output-item.video video {
+  border-radius: 12px;
+  box-shadow: 0 0 10px #0af;
+  display: block;
+  margin: 0 auto;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  #userInput {
+    height: 80px;
+  }
+  #sendBtn {
+    width: 100%;
+  }
+}
