@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Future AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>🤖 Future AI</h1>
+
+    <div class="mode-select">
+      <label>モード切替：</label>
+      <select id="mode">
+        <option value="chat">チャット</option>
+        <option value="image">画像生成</option>
+        <option value="video">動画生成</option>
+        <option value="search">Web検索</option>
+        <option value="file">ファイル分析</option>
+      </select>
+    </div>
+
+    <div class="input-area">
+      <textarea id="userInput" placeholder="ここに入力..."></textarea>
+      <input type="file" id="fileInput" />
+      <button id="sendBtn">送信</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
