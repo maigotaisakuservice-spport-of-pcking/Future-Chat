@@ -6,13 +6,23 @@
   <title>Future AI</title>
   <link rel="stylesheet" href="style.css" />
     <!-- SDK/ライブラリ読み込み -->
-  <script src="https://cdn.jsdelivr.net/npm/webllm/dist/webllm.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/ffmpeg.wasm/ffmpeg.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist/build/pdf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v4.0.2/dist/tesseract.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docxjs/dist/docx.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <!-- WebLLM SDK -->
+<script src="https://cdn.jsdelivr.net/npm/webllm/dist/webllm.min.js"></script>
+
+<!-- ffmpeg.wasm -->
+<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.7/dist/ffmpeg.min.js"></script>
+
+<!-- PDF.js -->
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist/build/pdf.min.js"></script>
+
+<!-- Tesseract.js -->
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+
+<!-- Docx.js -->
+<script src="https://cdn.jsdelivr.net/npm/docxjs/dist/docx.min.js"></script>
+
+<!-- PapaParse (CSV解析) -->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -22,7 +32,6 @@
       <label>モード切替：</label>
       <select id="mode">
         <option value="chat">チャット</option>
-        <option value="image">画像生成</option>
         <option value="video">動画生成</option>
         <option value="search">Web検索</option>
         <option value="file">ファイル分析</option>
